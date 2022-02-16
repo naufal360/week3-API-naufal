@@ -1,3 +1,2 @@
-# Remove env word from local repo if u want to activate with herokuapp
 node_modules
 .env
