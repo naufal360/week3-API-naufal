@@ -37,7 +37,7 @@ exports.getRecommendation = async (req, res, next) => {
            res.status(500).json({ message: 'User Id tidak boleh dari 943 atau kurang dari 0'});
        }
 
-       const recommendation = model.recommend(userId);
+       const recommendation = await model.recommend(userId);
        
        if(!recommendation) {
            res.status(404).json({ message: 'Recommendation movie not found!'});
